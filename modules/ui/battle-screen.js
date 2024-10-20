@@ -509,7 +509,7 @@ class Battle {
     const el = byId("battleDie_" + side);
     const prev = +el.innerHTML;
     do {
-      el.innerHTML = rand(1, 6);
+      el.innerHTML = rand(1, 7);
     } while (el.innerHTML == prev);
     this[side].die = +el.innerHTML;
   }
